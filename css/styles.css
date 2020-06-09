@@ -1,0 +1,294 @@
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+
+#ecbc02;
+#1089ff;
+#23374d;
+
+*/
+
+/* ***************************************** */
+/* HTML elements 
+/* ***************************************** */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #e5e5e5;
+  }
+
+h1{
+    color: white;
+}
+
+header{
+    /* Apply image and gradient effects */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-banner.jpg);
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    margin: 0 auto;
+    border-color: grey;
+    border-width: 5px;
+  }
+
+/* ***************************************** */
+/* Title Section 
+/* ***************************************** */
+
+.company-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0 8px;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-container{
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    left: 20%; 
+}
+
+.hero-text{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.hero-sub{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/* Buttons */
+.hero-button{
+    margin-right: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* Images */
+.hero-product-container{
+    position: absolute;
+    top: 60%;
+    right: 20%;
+}
+
+.hero-product{
+    width: 300px;
+    height: auto;
+}
+
+/* ***************************************** */
+/* Navigation Section 
+/* ***************************************** */
+.nav-container{
+    margin: 0 15%;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+/* ***************************************** */
+/* Products Section 
+/* ***************************************** */
+.products-section{
+    margin: 3% 15% 3%;
+}
+
+.products-header{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #555;
+}
+
+.products-copy{
+    text-align: center;
+    margin: 2% 25%
+
+}
+
+.products-text{
+    color: #555555;
+}
+
+.card-product{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 320px;
+    width: auto;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all 500ms; 
+
+}
+
+.card-product:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.card-title{
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.card-text{
+    text-align: center;
+}
+
+/* ***************************************** */
+/* Gallery Section 
+/* ***************************************** */
+
+.gallery-section{
+    margin: 5% 5%;
+}
+
+.gallery-header{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #555;
+    margin-bottom: 2%;
+}
+
+.gallery-copy{
+    text-align: center;
+    margin: 2% 25%
+}
+
+.photo-grid{
+    display: grid;
+    gap: 1rem;
+
+    /* 1FR fractional unit 100% */
+    /* 2x 1FR = 50% etc */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+    /* Auto fill vs. Auto Fit(expands its children) */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+
+}
+
+.gallery-card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #353535;
+    font-size: 3rem;
+    color: white;
+    box-shadow: rgba(3,8,20,0.1) 0px 0.15rem 0.5rem, rgba(2,8,20,0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms; 
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.gallery-card:hover{
+    box-shadow: rgba(2,8,20,0.1) 0px 0.35rem 1.175em, rgba(2,8,20,0.08) 0px 0.175rem 0.5em;
+    transform: translateY(-3px) scale(1.1);
+
+}
+
+
+
+
+/* ***************************************** */
+/* Footer Section 
+/* ***************************************** */
+.footer-section{
+    background-color: #23374d;
+    color: white;
+    padding: 1% 20% 2%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link-container{
+    width: 200px;
+}
+
+.icon-container{
+    width: 200px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0 3%;
+}
+
+.footer-link:hover{
+    text-decoration: none;
+    color: #555;
+}
+
+.social-icons{
+    font-size: 1rem;
+    margin: 0 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright{
+    margin-top: 1%;
+    font-size: 10px;
+}
+
+
